@@ -41,27 +41,75 @@ h2 span.spacer {
     padding:0 5px;
 }
 
-.boxed {
-   border: 2px solid rgb(0, 0, 0) ;
+
+.show-hide-text {
+display: flex;
+flex-wrap: wrap;
 }
 
-p1 { 
-   position: absolute; 
-   top: 2850px; 
-   left: 10; 
-   width: 100%; 
+.show-hide-text a {
+order: 2;
 }
 
-p2 { 
-   position: absolute; 
-   top: 0px; 
-   left: 370; 
-   width: 100%; 
+.show-hide-text p4 {
+position: relative;
+overflow: hidden;
+max-height: 60px;
 }
 
-p3 { 
-   position: absolute; 
-   top: 0px; 
-   left: 700; 
-   width: 100%; 
+.show-hide-text p4 {
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+
+.show-hide-text p5 {
+   position: relative;
+   overflow: hidden;
+   max-height: 60px;
+}
+   
+.show-hide-text p5 {
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+
+.show-hide-text p6 {
+   position: relative;
+   overflow: hidden;
+   max-height: 60px;
+}
+   
+.show-hide-text p6 {
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+
+.show-less {
+display: none;
+}
+
+.show-less:target {
+display: block;
+}
+
+.show-less:target ~ p4 {
+display: block;
+max-height: 100%;
+}
+
+.show-less:target ~ p5 {
+   display: block;
+   max-height: 100%;
+}
+
+.show-less:target ~ p6 {
+   display: block;
+   max-height: 100%;
+}
+
+.show-less:target + a {
+display: none;
 }
