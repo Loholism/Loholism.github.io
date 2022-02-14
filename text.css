@@ -1,8 +1,5 @@
 
-.image { 
-    position: relative; 
-    width: 100%; /* for IE 6 */
-}
+background: #fff url() center top/cover no-repeat fixed;
 
 h1 { 
    position: absolute; 
