@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Loholism Website</title>
     <style>
-        /* SSSSsstyles */
+        /* Reset styles */
         *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Doc layout */
+        /* Document layout */
         html, body {
             margin: 0;
             height: 100%;
@@ -71,19 +71,19 @@
 
         .hero {
             background-color: #f6c90e;
-            padding: 50px;
+            padding: 30px;
             text-align: center;
             margin-bottom: 40px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 24px;
-            margin-bottom: 40px;
+            font-size: 18px;
+            margin-bottom: 20px;
             opacity: 0.8;
         }
 
@@ -111,6 +111,7 @@
 
         .column {
             width: calc(50% - 20px);
+            margin-bottom: 20px;
         }
 
         .card {
@@ -119,6 +120,7 @@
             box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
             border-radius: 5px;
             transition: transform 0.5s ease-in-out;
+            text-align: center;
         }
 
         .card:hover {
@@ -143,10 +145,18 @@
             margin-bottom: 20px;
         }
 
-        @media only screen and (max-width: 680px) {
+        @media only screen and (max-width: 768px) {
+            .hero {
+              padding: 20px;
+            }
+            .hero h1 {
+              font-size: 32px;
+            }
+            .hero p {
+              font-size: 16px;
+            }
             .column {
-                width: 100%;
-                margin-bottom: 20px;
+              width: 100%;
             }
         }
 
@@ -225,10 +235,9 @@
         </main>
         <footer>
             <div class="container">
-                <p>&copy; Stay trolling, Knuckles</p>
+                <p>© Stay trolling, Knuckles</p>
             </div>
         </footer>
     </div>
 </body>
 </html>
-.
