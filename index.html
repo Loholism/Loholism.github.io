@@ -1,56 +1,52 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta content="Loholism" property="og:title" />
-    <meta content="Loholism is a kewl bedrock anarchy clan that is very influential" property="og:description" />
+    <meta content="Loholism is a kewl Bedrock Anarchy Clan that is very influential" property="og:description" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <title>Loholism Website</title>
     <style>
+        /* SSSSsstyles */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Doc layout */
         html, body {
-    margin: 0;
-    height: 100%;
-} 
+            margin: 0;
+            height: 100%;
+        }
 
-.wrapper {
-    min-height: 100%;
-    position: relative;
-}
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-main {
-    padding-bottom: 50px;
-}
+        main {
+            flex: 1;
+            padding-bottom: 40px;
+        }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px; /* Changed from 50px */
-    background-color: #444;
-    color: #fff;
-    padding: 10px 20px; /* Changed from 20px */
-    text-align: center;
-}
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            height: 40px;
+        }
 
+        /* Global styles */
         body {
             background-color: #f9f7e8;
             color: #444;
             font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #f6c90e;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header nav a {
-            font-style: italic;
-            font-size: 13px;
+            font-size: 16px;
+            line-height: 1.5;
         }
 
         h1, h2, h3 {
@@ -146,6 +142,28 @@ footer {
             opacity: 0.8;
             margin-bottom: 20px;
         }
+
+        @media only screen and (max-width: 680px) {
+            .column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Header styles */
+        header {
+            background-color: #f6c90e;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            font-style: italic;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
@@ -154,11 +172,11 @@ footer {
             <div class="container">
                 <h1>LOHOLISM</h1>
                 <nav>
-                    <a href="#">The Best Bedrock Anarchy Clan</a>
+                    <a href="#main-content">SKIP TO MAIN CONTENT</a>
                 </nav>
             </div>
         </header>
-        <main>
+        <main id="main-content">
             <div class="hero">
                 <h1>Welcome!</h1>
                 <p>Loholism is a Minecraft Bedrock Anarchy Clan that's very kewl!</p>
@@ -169,7 +187,7 @@ footer {
                     <div class="column">
                         <div class="card">
                             <a href="https://discord.gg/duyTy9j975">
-                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113385610217005066/Picsart_23-05-31_11-36-45-925.jpg" alt="Card Image">
+                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113385610217005066/Picsart_23-05-31_11-36-45-925.jpg" alt="2b2tmcpe Database">
                                 <h2>2b2tmcpe Database</h2>
                                 <p>The database is a 2b2tmcpe.org project aiming to archive kits, maparts, etc!</p>
                             </a>
@@ -178,7 +196,7 @@ footer {
                     <div class="column">
                         <div class="card">
                             <a href="https://discord.gg/KbGFYd8Ctk">
-                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113388079995162634/Picsart_23-05-31_11-46-27-474.png" alt="Card Image">
+                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113388079995162634/Picsart_23-05-31_11-46-27-474.png" alt="2b2tmcpe History Archive">
                                 <h2>2b2tmcpe History Archive</h2>
                                 <p>The 2b2tmcpe History Archive is a history archive made for the server 2b2tmcpe.org!</p>
                             </a>
@@ -187,17 +205,19 @@ footer {
                     <div class="column">
                         <div class="card">
                          <a href="https://www.youtube.com/@Loholism">
-                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113393251064492122/Picsart_23-05-31_12-07-07-649.jpg" alt="Card Image">
-                            <h2>Loholism Youtube</h2>
-                            <p>Subscribe to Loholism's youtube for cool bedrock anarchy videos.</p>
+                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113393251064492122/Picsart_23-05-31_12-07-07-649.jpg" alt="Loholism YouTube Channel">
+                                <h2>Loholism YouTube</h2>
+                                <p>Watch videos of base tours, exploits, and fights on the Loholism YouTube channel!</p>
+                            </a>
                         </div>
                     </div>
                     <div class="column">
                         <div class="card">
-                            <a href="https://github.com/Loholism">
-                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113394298415742976/Picsart_23-05-31_12-11-09-015.jpg" alt="Card Image">
-                            <h2>Loholism Github</h2>
-                            <p>Follow Loholism's github for cool open source projects.</p>
+                            <a href="https://discord.gg/duyTy9j975">
+                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113394298415742976/Picsart_23-05-31_12-11-09-015.jpg" alt="2b2tmcpe Stats">
+                                <h2>Loholism Github</h2>
+                                <p>Follow Loholism's github for cool open source projects.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -205,9 +225,10 @@ footer {
         </main>
         <footer>
             <div class="container">
-                <p>Stay troling :) -Knuckles</p>
+                <p>&copy; Stay trolling, Knuckles</p>
             </div>
         </footer>
     </div>
 </body>
 </html>
+.
