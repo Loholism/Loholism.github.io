@@ -10,7 +10,7 @@
         html, body {
             margin: 0;
             height: 100%;
-        } 
+        }
 
         .wrapper {
             min-height: 100%;
@@ -19,16 +19,17 @@
 
         main {
             padding-bottom: 50px;
+            flex: 1;
         }
 
         footer {
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 40px; /* Changed from 50px */
+            height: 50px;
             background-color: #444;
             color: #fff;
-            padding: 10px 20px; /* Changed from 20px */
+            padding: 10px 20px;
             text-align: center;
         }
 
@@ -74,20 +75,20 @@
 
         .hero {
             background-color: #f6c90e;
-            padding: 50px;
+            padding: 20px;
             text-align: center;
             margin-bottom: 40px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 24px;
-            margin-bottom: 40px;
+            font-size: 18px;
             opacity: 0.8;
+            margin-bottom: 20px;
         }
 
         .btn {
@@ -109,11 +110,8 @@
         .main-content {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .column {
-            width: calc(50% - 20px);
+            justify-content: center;
+            align-items: center;
         }
 
         .card {
@@ -148,22 +146,62 @@
         }
 
         @media only screen and (max-width: 768px) {
+            header, .container {
+                padding: 10px;
+            }
+
             .hero h1 {
-                font-size: 36px;
+                font-size: 24px;
             }
 
             .hero p {
-                font-size: 18px;
-                margin-bottom: 20px;
+                font-size: 16px;
+                margin-bottom: 10px;
             }
 
-            .column {
-                width: 100%;
-                margin-bottom: 20px;
+            .main-content {
+                flex-direction: column;
             }
 
             .card {
+                width: 100%;
                 padding: 10px;
+            }
+
+            .card p {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .container {
+                padding: 0;
+            }
+
+            .hero h1 {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .card h2 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 16px;
+            }
+
+            footer {
+                height: 60px;
+                padding: 10px 5px;
             }
         }
     </style>
@@ -186,41 +224,33 @@
             </div>
             <div class="container">
                 <div class="main-content">
-                    <div class="column">
-                        <div class="card">
-                            <a href="https://discord.gg/duyTy9j975">
-                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113385610217005066/Picsart_23-05-31_11-36-45-925.jpg" alt="Card Image">
-                                <h2>2b2tmcpe Database</h2>
-                                <p>The 2b2tmcpe database is a 2b2tmcpe.org project aiming to archive kits, maparts, etc from the server!</p>
-                            </a>
-                        </div>
+                    <div class="card">
+                        <a href="https://discord.gg/duyTy9j975">
+                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113385610217005066/Picsart_23-05-31_11-36-45-925.jpg" alt="Card Image">
+                            <h2>2b2tmcpe Database</h2>
+                            <p>The 2b2tmcpe database is a 2b2tmcpe.org project aiming to archive kits, maparts, etc from the server!</p>
+                        </a>
                     </div>
-                    <div class="column">
-                        <div class="card">
-                            <a href="https://discord.gg/KbGFYd8Ctk">
-                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113388353891618876/20190606_200922-1-1.jpg" alt="Card Image">
-                                <h2>2b2tmcpe History Archive</h2>
-                                <p>The 2b2tmcpe History Archive is a history archive made for the server 2b2tmcpe.org!</p>
-                            </a>
-                        </div>
+                    <div class="card">
+                        <a href="https://discord.gg/KbGFYd8Ctk">
+                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113388353891618876/20190606_200922-1-1.jpg" alt="Card Image">
+                            <h2>2b2tmcpe History Archive</h2>
+                            <p>The 2b2tmcpe History Archive is a history archive made for the server 2b2tmcpe.org!</p>
+                        </a>
                     </div>
-                    <div class="column">
-                        <div class="card">
-                            <a href="https://www.youtube.com/@Loholism">
-                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113393251064492122/Picsart_23-05-31_12-07-07-649.jpg" alt="Card Image">
-                                <h2>Loholism Youtube</h2>
-                                <p>Subscribe to Loholism's youtube for cool bedrock anarchy videos.</p>
-                            </a>
-                        </div>
+                    <div class="card">
+                        <a href="https://www.youtube.com/@Loholism">
+                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113393251064492122/Picsart_23-05-31_12-07-07-649.jpg" alt="Card Image">
+                            <h2>Loholism Youtube</h2>
+                            <p>Subscribe to Loholism's youtube for cool bedrock anarchy videos.</p>
+                        </a>
                     </div>
-                    <div class="column">
-                        <div class="card">
-                            <a href="https://github.com/Loholism">
-                                <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113394298415742976/Picsart_23-05-31_12-11-09-015.jpg" alt="Card Image">
-                                <h2>Loholism Github</h2>
-                                <p>Follow Loholism's github for cool open source projects.</p>
-                            </a>
-                        </div>
+                    <div class="card">
+                        <a href="https://github.com/Loholism">
+                            <img src="https://cdn.discordapp.com/attachments/891823667267379250/1113394298415742976/Picsart_23-05-31_12-11-09-015.jpg" alt="Card Image">
+                            <h2>Loholism Github</h2>
+                            <p>Follow Loholism's github for cool open source projects.</p>
+                        </a>
                     </div>
                 </div>
             </div>
